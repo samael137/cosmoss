@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contacto — Cosmos</title>
+  <link rel="stylesheet" href="estilos.css">
+
+  <!-- Estilos locales para que la tabla y el formulario se vean bien aunque no modifiques estilos.css -->
+  <style>
+    /* --- Ajustes específicos para contacto.html --- */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 320px; /* contenido + aside */
+      gap: 20px;
+      align-items: start;
+    }
+
+    /* Perfil */
+    .perfil {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      margin-bottom: 18px;
+    }
+    .perfil img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+      border: 2px solid rgba(102,252,241,0.12);
+    }
+    .perfil .bio { max-width: 680px; }
+
+    /* Tabla */
+    table.info {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      background: rgba(255,255,255,0.02);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    table.info th,
+    table.info td {
+      padding: 12px 14px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    table.info th {
+      background: rgba(102,252,241,0.04);
+      color: #bfeef0;
+      width: 200px;
+    }
+
+    /* Formulario */
+    form.contacto-form {
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .form-row { display:flex; gap:10px; }
+    label { font-weight:600; display:block; margin-bottom:6px; color: #dff9fa; }
+    input[type="text"], input[type="email"], textarea {
+      width:100%;
+      padding:10px;
+      border-radius:8px;
+      border:1px solid rgba(255,255,255,0.06);
+      background: rgba(0,0,0,0.25);
+      color: white;
+    }
+    textarea { min-height:120px; resize:vertical; }
+    button.btn {
+      background: linear-gradient(90deg,#66fcf1,#4bd3d0);
+      color:#042029;
+      padding:10px 16px;
+      border:none;
+      border-radius:8px;
+      font-weight:700;
+      cursor:pointer;
+      transition: transform .12s;
+    }
+    button.btn:hover { transform: translateY(-2px); }
+
+    /* Aside - enlaces sociales */
+    .redes ul { list-style: none; padding-left:0; margin:0; }
+    .redes li { margin:8px 0; }
+    .redes a { color: #66fcf1; text-decoration:none; font-weight:600; }
+    .redes a:hover { text-decoration: underline; color: #ffffff; }
+
+    @media (max-width:900px) {
+      .contact-grid { grid-template-columns: 1fr; }
+      .perfil { flex-direction: column; align-items: center; text-align: center; }
+      .perfil .bio { max-width: none; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <img src="imagenes/estrellade neutrones.jpg" alt="Logo Cosmos" class="logo">
+      <h1>Contacto — Cosmos</h1>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav class="main-nav" aria-label="Navegación principal">
+    <a href="index.html">Inicio</a>
+    <a href="acerca.html">Acerca</a>
+    <a href="descubrimientos/planetas/planetas.html">Planetas</a>
+    <a href="descubrimientos/galaxias/galaxias.html">Galaxias</a>
+    <a href="descubrimientos/estrellas/estrellas.html">Estrellas</a>
+    <a href="descubrimientos/agujeros-negros/agujeros-negros.html">Agujeros Negros</a>
+    <a href="glosario.html">Glosario</a>
+    <a href="contacto.html" aria-current="page">Contacto</a>
+  </nav>
+
+  <!-- ESTRUCTURA PRINCIPAL: ASIDE + MAIN -->
+  <main class="container" role="main">
+    <div class="contact-grid">
+
+      <!-- CONTENIDO PRINCIPAL -->
+      <section aria-labelledby="titulo-contacto">
+        <h2 id="titulo-contacto">¡Hablemos del Cosmos!</h2>
+
+        <!-- PERFIL -->
+        <article class="perfil" aria-label="Perfil">
+          <img src="imagenes/boca.jpg" alt="Foto de perfil de [Tu Nombre]" />
+          <div class="bio">
+            <h3>Yuliño</h3>
+            <p>Soy estudiante/aficionado de astronomía. En este proyecto (Cosmos) comparto imágenes, datos curiosos y recursos para aprender sobre el universo.</p>
+            <p><strong>Intereses:</strong> astronomía observacional, programación de proyectos con Arduino, divulgación científica.</p>
+          </div>
+        </article>
+
+        <!-- TABLA DE INFORMACIÓN -->
+        <section aria-labelledby="info-basica">
+          <h3 id="info-basica">Información básica</h3>
+          <table class="info" aria-describedby="descripcion-tabla">
+            <caption id="descripcion-tabla" style="caption-side:bottom; text-align:left; padding:8px 14px; color:#cfeff0;">
+              Datos de contacto y perfil.
+            </caption>
+            <thead>
+              <tr>
+                <th>Dato</th>
+                <th>Detalle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th>Nombre</th><td>YUNIOR YULIÑO</td></tr>
+              <tr><th>Correo</th><td><a href="mailto:yulius@gmail.com">yulius@gmail.com</a></td></tr>
+              <tr><th>Carrera</th><td>Ingeniería de Sistemas</td></tr>
+              <tr><th>Universidad</th><td>UNAJMA</td></tr>
+              <tr><th>Rol en proyecto</th><td>Autor / Desarrollador</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- FORMULARIO DE CONTACTO (HTML básico) -->
+        <section aria-labelledby="form-contacto">
+          <h3 id="form-contacto">Enviar mensaje</h3>
+          <!-- Nota: action="#" no enviará el formulario a un servidor. Para pruebas puedes usar servicios o configurar un backend o action="mailto:..." -->
+          <form class="contacto-form" action="#" method="post">
+            <div class="form-row">
+              <div style="flex:1">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+              </div>
+              <div style="width:220px">
+                <label for="telefono">Teléfono</label>
+                <input id="telefono" name="telefono" type="text" placeholder="+51 9xxxxxxx">
+              </div>
+            </div>
+
+            <div>
+              <label for="correo">Correo electrónico</label>
+              <input id="correo" name="correo" type="email" placeholder="tunombre@ejemplo.com" required>
+            </div>
+
+            <div>
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Escribe tu consulta..." required></textarea>
+            </div>
+
+            <div style="text-align:left; margin-top:6px;">
+              <button class="btn" type="submit">Enviar mensaje</button>
+            </div>
+          </form>
+        </section>
+      </section>
+
+      <!-- ASIDE: enlaces externos / redes -->
+      <aside class="sidebar" aria-labelledby="titulo-aside">
+        <h3 id="titulo-aside">Redes y recursos</h3>
+
+        <div class="redes">
+          <ul>
+            <li><a href="https://www.nasa.gov/" target="_blank" rel="noopener">NASA (sitio oficial)</a></li>
+            <li><a href="https://www.esa.int/" target="_blank" rel="noopener">ESA (Agencia Espacial Europea)</a></li>
+            <li><a href="https://apod.nasa.gov/" target="_blank" rel="noopener">APOD (Astronomy Picture of the Day)</a></li>
+          </ul>
+        </div>
+
+        <h4>Sígueme</h4>
+        <div class="redes">
+          <ul>
+            <li><a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+
+        <h4>Datos rápidos</h4>
+        <p>Enlaces útiles para estudios y proyectos: datasets, imágenes públicas (NASA/ESA) y tutoriales para montar observaciones con tu propio equipo.</p>
+      </aside>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Cosmos — Proyecto educativo | <a href="glosario.html">Glosario</a> • <a href="index.html">Inicio</a></p>
+  </footer>
+</body>
+</html>

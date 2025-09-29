@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cosmos — Inicio</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <img src="imagenes/estrellade neutrones.jpg" alt="Logo Cosmos" class="logo">
+      <h1>Cosmos</h1>
+    </div>
+  </header>
+  
+  <nav class="main-nav">
+    <a href="index.html">Inicio</a>
+    <a href="acerca.html">Acerca</a>
+    <a href="descubrimientos/planetas/planetas.html">Planetas</a>
+    <a href="descubrimientos/galaxias/galaxias.html">Galaxias</a>
+    <a href="descubrimientos/estrellas/estrellas.html">Estrellas</a>
+    <a href="descubrimientos/agujeros-negros/agujeros-negros.html">Agujeros Negros</a>
+    <a href="glosario.html">Glosario</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <aside class="sidebar">
+    <h3>¿Qué es Cosmos?</h3>
+    <p>Proyecto educativo sobre astronomía: imágenes, datos y curiosidades.</p>
+    <p><strong>Tip:</strong> Haz clic en una imagen para verla ampliada.</p>
+  </aside>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <h2>Bienvenido al Cosmos 🌌</h2>
+      <p>Explora planetas, galaxias, estrellas y agujeros negros. Información en español y galería interactiva.</p>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="galeria-seccion">
+      <h3>🌟 Galería destacada</h3>
+      <div class="galeria">
+        <a href="#img1"><img src="imagenes/El sol.jpg" alt="El Sol"></a>
+        <a href="#img2"><img src="imagenes/jupiter.jpg" alt="Júpiter"></a>
+        <a href="#img3"><img src="imagenes/galaxia.jpg" alt="Galaxia espiral"></a>
+        <a href="#img4"><img src="imagenes/agujeronegro.jpg" alt="Agujero negro"></a>
+      </div>
+      <!-- Modales -->
+      <div id="img1" class="modal">
+        <a href="#" class="cerrar">&times;</a>
+        <img src="imagenes/El sol.jpg" alt="El Sol (ampliado)">
+        <p class="caption">El Sol — estrella de nuestro sistema solar</p>
+      </div>
+      <div id="img2" class="modal">
+        <a href="#" class="cerrar">&times;</a>
+        <img src="imagenes/jupiter.jpg" alt="Júpiter (ampliado)">
+        <p class="caption">Júpiter — gigante gaseoso</p>
+      </div>
+      <div id="img3" class="modal">
+        <a href="#" class="cerrar">&times;</a>
+        <img src="imagenes/galaxia.jpg" alt="Galaxia (ampliado)">
+        <p class="caption">Galaxia espiral</p>
+      </div>
+      <div id="img4" class="modal">
+        <a href="#" class="cerrar">&times;</a>
+        <img src="imagenes/agujeronegro.jpg" alt="Agujero negro (ampliado)">
+        <p class="caption">Representación artística de un agujero negro</p>
+      </div>
+    </section>
+
+    <!-- DATOS CURIOSOS -->
+    <section class="card curiosidades">
+      <h3>Datos curiosos</h3>
+      <ul>
+        <li>La luz del Sol tarda ~8 minutos en llegar a la Tierra.</li>
+        <li>Un día en Venus dura más que un año en Venus.</li>
+        <li>Júpiter podría contener más de 1 300 Tierras.</li>
+        <li>Las estrellas de neutrones giran cientos de veces por segundo.</li>
+        <li>La Vía Láctea contiene más de 100 mil millones de estrellas.</li>
+      </ul>
+    </section>
+
+    <!-- NOTICIAS -->
+    <section class="card noticias">
+      <h3>📰 Noticias del espacio</h3>
+      <article>
+        <h4>Nuevo telescopio espacial</h4>
+        <p>La NASA lanzó un nuevo telescopio que permitirá observar galaxias a 13 mil millones de años luz.</p>
+      </article>
+      <article>
+        <h4>Señales misteriosas</h4>
+        <p>Astrónomos detectaron ráfagas rápidas de radio que podrían dar pistas sobre la materia oscura.</p>
+      </article>
+      <article>
+        <h4>Misión a Marte</h4>
+        <p>La próxima misión tripulada a Marte está programada para la década del 2030.</p>
+      </article>
+    </section>
+
+    <!-- TABLA DE PLANETAS -->
+    <section class="tabla-planetas">
+      <h3>📊 Comparación de planetas</h3>
+      <table border="2" cellpadding="8">
+        <thead>
+          <tr>
+            <th>Planeta</th>
+            <th>Diámetro (km)</th>
+            <th>Duración del día</th>
+            <th>Número de lunas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mercurio</td>
+            <td>4,879</td>
+            <td>59 días</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Júpiter</td>
+            <td>139,820</td>
+            <td>10 h</td>
+            <td>95</td>
+          </tr>
+          <tr>
+            <td>Saturno</td>
+            <td>116,460</td>
+            <td>10 h 30 min</td>
+            <td>146</td>
+          </tr>
+          <tr>
+            <td>Neptuno</td>
+            <td>49,244</td>
+            <td>16 h</td>
+            <td>14</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- VIDEOS -->
+     <section class="videos">
+  <h3>🎥 Videos recomendados</h3>
+
+  <div class="video-grid">
+    <!-- VIDEO 1: thumbnail que abre YouTube -->
+    <a class="video-thumb" href="https://www.youtube.com/watch?v=7nT7JGZMbtM" target="_blank" rel="noopener">
+      <img src="https://img.youtube.com/vi/7nT7JGZMbtM/hqdefault.jpg" alt="James Webb: lanzamiento">
+      <span class="play">▶</span>
+      <p class="v-title">James Webb — Lanzamiento (abre en YouTube)</p>
+    </a>
+
+    <!-- VIDEO 2 -->
+    <a class="video-thumb" href="https://www.youtube.com/watch?v=U2T8LpD4IiI" target="_blank" rel="noopener">
+      <img src="https://img.youtube.com/vi/U2T8LpD4IiI/hqdefault.jpg" alt="Webb captura auroras">
+      <span class="play">▶</span>
+      <p class="v-title">Webb: Auroras de Júpiter (abre en YouTube)</p>
+    </a>
+
+    <!-- VIDEO 3 -->
+    <a class="video-thumb" href="https://www.youtube.com/watch?v=libKVRa01L8" target="_blank" rel="noopener">
+      <img src="https://img.youtube.com/vi/libKVRa01L8/hqdefault.jpg" alt="Viaje por el sistema solar">
+      <span class="play">▶</span>
+      <p class="v-title">Viaje por el sistema solar (abre en YouTube)</p>
+    </a>
+
+    <!-- VIDEO 4: nuevo de Astronomiaweb -->
+    <a class="video-thumb" href="https://www.youtube.com/watch?v=C9dnl-MtZYQ" target="_blank" rel="noopener">
+      <img src="https://img.youtube.com/vi/C9dnl-MtZYQ/hqdefault.jpg" alt="Astronomiaweb: Objetos imposibles">
+      <span class="play">▶</span>
+      <p class="v-title">Astronomiaweb — El Telescopio James Webb Descubre Objetos IMPOSIBLES en Orion</p>
+    </a>
+
+    <!-- VIDEO 5: nuevo de CdeCiencia (o enlace personalizado) -->
+    <a class="video-thumb" href="https://www.youtube.com/watch?v=CKHWvanTXYw" target="_blank" rel="noopener">
+      <img src="https://img.youtube.com/vi/CKHWvanTXYw/hqdefault.jpg" alt="CdeCiencia: El Sistema Solar es MUCHO MÁS GRANDE">
+      <span class="play">▶</span>
+      <p class="v-title">El Sistema Solar es MUCHO MÁS GRANDE</p>
+    </a>
+
+  </div>
+</section>
+
+    
+
+
+    <!-- MISIONES ESPACIALES -->
+    <section class="misiones">
+      <h3>🚀 Misiones espaciales destacadas</h3>
+      <ul>
+        <li><strong>Apollo 11 (1969):</strong> Primer alunizaje tripulado.</li>
+        <li><strong>Voyager 1 (1977):</strong> La nave más lejana de la Tierra.</li>
+        <li><strong>James Webb (2021):</strong> Telescopio que observa el universo primitivo.</li>
+      </ul>
+    </section>
+
+    <!-- LÍNEA DE TIEMPO DEL UNIVERSO -->
+    <section class="timeline">
+      <h3>⏳ Línea de tiempo del universo</h3>
+      <ol>
+        <li><strong>13,800 millones de años:</strong> Big Bang.</li>
+        <li><strong>13,500 millones:</strong> Formación de las primeras galaxias.</li>
+        <li><strong>4,600 millones:</strong> Nacimiento del Sistema Solar.</li>
+        <li><strong>4,500 millones:</strong> Formación de la Tierra.</li>
+        <li><strong>Hoy:</strong> La humanidad explora el espacio.</li>
+      </ol>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <h3>🌠 Únete a nuestra misión</h3>
+      <p>¿Quieres aprender más sobre el universo? Revisa el glosario y contáctanos para participar en el proyecto.</p>
+      <a href="contacto.html" class="btn">Contáctanos</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Cosmos — Proyecto educativo en español | Fuentes: 
+      <a href="https://www.nasa.gov/" target="_blank" rel="noopener">NASA</a>, 
+      <a href="https://www.esa.int/" target="_blank" rel="noopener">ESA</a>
+    </p>
+  </footer>
+</body>
+</html>
